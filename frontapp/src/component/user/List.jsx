@@ -8,6 +8,7 @@ const List = () => {
     loadUsers();
   }, []);
 
+  // get all users
   const loadUsers = async () => {
     const resulte = await axios.get(`http://localhost:9090/users`, {
       validateStatus: () => {
